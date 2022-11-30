@@ -6,7 +6,7 @@
     --blanco: #fff;
     --negro: #000;
 
-    --fuentePrincipal:  'Staatliches', cursive;
+    --fuentePrincipal: 'Staatliches', cursive;
 }
 
 /*Esto de aca abajo es para que 1rem sean 10px*/
@@ -24,118 +24,165 @@ html {
 /*Globales:*/
 
 body {
-    background-color: var(--primario); /*Un background de color especifico*/
-    font-size: 1.6rem; /*Tamaño de la fuente de 16px*/
-    line-height: 1.5; /*Un Interlineado de 1.5*/
+    background-color: var(--primario);
+    /*Un background de color especifico*/
+    font-size: 1.6rem;
+    /*Tamaño de la fuente de 16px*/
+    line-height: 1.5;
+    /*Un Interlineado de 1.5*/
 }
 
 p {
-    font-size: 1.8rem; /*Tiene una fuente de 18px*/
-    font-family: Arial, Helvetica, sans-serif; /*Esta la familia de la fuente*/
-    color: var(--blanco); /*Los parrafos tienen color de letra especifico*/
+    font-size: 1.8rem;
+    /*Tiene una fuente de 18px*/
+    font-family: Arial, Helvetica, sans-serif;
+    /*Esta la familia de la fuente*/
+    color: var(--blanco);
+    /*Los parrafos tienen color de letra especifico*/
 }
 
 a {
-    text-decoration: none; /*Los enlaces no tienen decoracion, subrayado*/
+    text-decoration: none;
+    /*Los enlaces no tienen decoracion, subrayado*/
 }
 
 img {
-    max-width: 100%; /*Las imagenes tienen su ancho maximo*/
+    max-width: 100%;
+    /*Las imagenes tienen su ancho maximo*/
 }
 
 .contenedor {
-    max-width: 120rem; /*El contenedor tiene un ancho de 1200px*/
-    margin: 0 auto; /*Para centrar el contenido*/
+    max-width: 120rem;
+    /*El contenedor tiene un ancho de 1200px*/
+    margin: 0 auto;
+    /*Para centrar el contenido*/
 }
 
 h1,
 h2,
 h3 {
-    text-align: center; /*Un alineado central*/
-    color: var(--secundario); /*Un color de letra especifico*/
-    font-family: var(--fuentePrincipal); /*Una familia de fuente especifica*/
+    text-align: center;
+    /*Un alineado central*/
+    color: var(--secundario);
+    /*Un color de letra especifico*/
+    font-family: var(--fuentePrincipal);
+    /*Una familia de fuente especifica*/
 }
 
 h1 {
-    font-size: 4rem; /*Tamaño de letra de 40px*/
+    font-size: 4rem;
+    /*Tamaño de letra de 40px*/
 }
 
 h2 {
-    font-size: 3.2rem; /*Tamaño de letra de 32px*/
+    font-size: 3.2rem;
+    /*Tamaño de letra de 32px*/
 }
 
 h3 {
-    font-size: 2.4rem; /*Tamaño de letra de 24px*/
+    font-size: 2.4rem;
+    /*Tamaño de letra de 24px*/
 }
 
 /*Header*/
 
 .header {
-    display: flex; /*Esto sirve para poder mover las cosas, vertical y horizontalmente*/
-    justify-content: center; /*Centra el contenido*/
+    display: flex;
+    /*Esto sirve para poder mover las cosas, vertical y horizontalmente*/
+    justify-content: center;
+    /*Centra el contenido*/
 }
 
 .header__logo {
-    margin: 3rem 0; /*Margen*/
+    margin: 3rem 0;
+    /*Margen*/
 }
 
 /*Footer*/
 
 .footer {
-    background-color: var(--primarioOscuro); /*Color de background especifico*/
-    margin-top: 2rem; /*Margen superior de 20px*/
-    padding: 1rem 0; /*padding/relleno superior e inferior de 10px*/
+    background-color: var(--primarioOscuro);
+    /*Color de background especifico*/
+    margin-top: 2rem;
+    /*Margen superior de 20px*/
+    padding: 1rem 0;
+    /*padding/relleno superior e inferior de 10px*/
 }
 
 .footer__texto {
-    text-align: center; /*Texto alineado al centro*/
-    font-family: var(--fuentePrincipal); /*Fuente de la familia especifica*/
-    font-size: 2.2rem; /*Tamaño de la fuente de 22px*/
+    text-align: center;
+    /*Texto alineado al centro*/
+    font-family: var(--fuentePrincipal);
+    /*Fuente de la familia especifica*/
+    font-size: 2.2rem;
+    /*Tamaño de la fuente de 22px*/
 }
 
 /*Navegacion:*/
 
 .navegacion {
-    background-color: var(--primarioOscuro); /*Color de background especifico*/
-    padding: 1rem 0; /*Relleno de 10px*/
-    display: flex; /*Esto sirve para poder mover las cosas, vertical y horizontalmente*/
-    justify-content: center; /*Texto centrado*/
+    background-color: var(--primarioOscuro);
+    /*Color de background especifico*/
+    padding: 1rem 0;
+    /*Relleno de 10px*/
+    display: flex;
+    /*Esto sirve para poder mover las cosas, vertical y horizontalmente*/
+    justify-content: center;
+    /*Texto centrado*/
     /*Separación forma nueva*/
-    gap: 2rem; /*Separa los elementos con 20px*/
+    gap: 2rem;
+    /*Separa los elementos con 20px*/
 
     /*Separación forma vieja
     margin-right: 2rem*/
 }
 
 .navegacion__enlace {
-    font-family: var(--fuentePrincipal); /*Fuente de familia especifica*/
-    color: var(--blanco); /*Color de letra especifica*/
-    font-size: 3rem; /*Tamaño de fuente de 30px*/
-    margin-right: 2rem; /*Margen derecho de 20px*/
+    font-family: var(--fuentePrincipal);
+    /*Fuente de familia especifica*/
+    color: var(--blanco);
+    /*Color de letra especifica*/
+    font-size: 3rem;
+    /*Tamaño de fuente de 30px*/
+    margin-right: 2rem;
+    /*Margen derecho de 20px*/
 }
 
-.navegacion__enlace:last-of-type { /*Esto ayuda si usas la forma vieja de separar, lo que hace es sacarle el margen al ultimo elemento*/
+.navegacion__enlace:last-of-type {
+    /*Esto ayuda si usas la forma vieja de separar, lo que hace es sacarle el margen al ultimo elemento*/
     margin-right: 0;
 }
 
-.navegacion__enlace--activo, /*Esto sirve para cuando esta activo*/
-.navegacion__enlace:hover {  /*Esto sirve para que cambie cuando el cursor pasa por encima de él*/
-    color: var(--secundario); /*Color especifico al que cambia*/
+.navegacion__enlace--activo,
+/*Esto sirve para cuando esta activo*/
+.navegacion__enlace:hover {
+    /*Esto sirve para que cambie cuando el cursor pasa por encima de él*/
+    color: var(--secundario);
+    /*Color especifico al que cambia*/
 }
 
 /*Grid*/
+/*Con estas dos cosas de Grid ya podes hacer un feed tipico de una tienda virtual*/
 
 .grid {
     display: grid;
+    /*Esto hace que quede todo como si fuese una malla y así poder ordenar las cosas con más facilidad*/
     grid-template-columns: repeat(2, 1fr);
+    /*De esta forma se muestra 2  elementos por fila*/
     gap: 2rem;
+    /*Separacion entre los elementos de 20px*/
 }
 
 @media (min-width: 768px) {
+
+    /*Mediaquerry para un tamaño especifico*/
     .grid {
         display: grid;
+        /*Esto hace que quede todo como si fuese una malla y así poder ordenar las cosas con más facilidad*/
         grid-template-columns: repeat(3, 1fr);
+        /*De esta forma se muestra 3  elementos por fila*/
         gap: 2rem;
+        /*Separacion entre los elementos de 20px*/
     }
 }
 
@@ -143,68 +190,162 @@ h3 {
 
 .producto {
     background-color: var(--primarioOscuro);
+    /*Color de background especifico*/
     padding: 1rem;
+    /*Relleno de 10px*/
 }
 
 .producto__imagen {
     width: 100%
+        /*Las imagenes estan a su ancho maximo*/
 }
 
 .producto__nombre {
     font-size: 4rem;
+    /*Tamaño de fuente de 40px*/
 
 }
 
 .producto__precio {
     font-size: 2.8rem;
+    /*Tamaño de fuente de 28px*/
     color: var(--secundario);
+    /*Color de letra especificio*/
 }
 
 .producto__nombre,
 .producto__precio {
     font-family: var(--fuentePrincipal);
+    /*Familia de fuente especifica*/
     margin: 1rem 0;
+    /*Margen superior e unferior de 10px*/
     text-align: center;
+    /*Texto alineado*/
     line-height: 1.2;
+    /*Interlineado de 1.2*/
 }
 
 /*Graficos*/
 
 .grafico {
     min-height: 30rem;
-    background-repeat: no-repeat; /*Esto hace que no se repita el background (imagen)*/
-    background-size: cover; /*Esto hace que la imagen cubra todo el epacio disponible*/
+    /*Esto hace que el minimo del alto de la imagen sea 300px*/
+    background-repeat: no-repeat;
+    /*Esto hace que no se repita el background (imagen)*/
+    background-size: cover;
+    /*Esto hace que la imagen cubra todo el epacio disponible*/
     grid-column: 1 / 3;
+    /*Esto posiciona el grafico desde la columna 1 a la 3*/
 }
 
 .grafico--camisas {
     grid-row: 2 / 3;
-    background-image: url(../img/grafico1.jpg); /*Para colocar una imagen desde css se debe utilizar url()*/
+    /*Esto posiciona el grafico de camisas desde la fila 2 a la 3*/
+    background-image: url(../img/grafico1.jpg);
+    /*Para colocar una imagen desde css se debe utilizar url()*/
 }
 
 .grafico--node {
     grid-row: 8 / 9;
-    background-image: url(../img/grafico2.jpg); 
+    /*Esto posiciona el grafico de camisas desde la fila 8 a la 9*/
+    background-image: url(../img/grafico2.jpg);
+    /*Para colocar una imagen desde css se debe utilizar url()*/
 }
 
 @media (min-width: 768px) {
     .grafico--node {
         grid-row: 5 / 6;
+        /*Esto posiciona el grafico de node desde la fila 5 a la 6*/
         grid-column: 2 / 4;
+        /*Esto posiciona el grafico de node en la columna 2 a la 4*/
     }
 }
 
 /*Nosotros*/
 
-.nosotros{
+.nosotros {
     display: flex;
+    /*Esto hace que quede todo como si fuese una malla y así poder ordenar las cosas con más facilidad*/
+    grid-template-rows: repeat(2, auto);
+    /*Hace dos filas*/
     justify-content: center;
+    /*Centra el contenido*/
+    column-gap: 2rem;
+    /*Separa los elementos con 20px*/
 }
 
-.nosotros img{
+@media (min-width: 768px) {
+    .nosotros {
+        display: flex;
+        /*Esto hace que quede todo como si fuese una malla y así poder ordenar las cosas con más facilidad*/
+        grid-template-columns: repeat(2, 1fr);
+        /*Hace dos columnas*/
+        justify-content: center;
+        /*Centra el contenido*/
+        column-gap: 2rem;
+        /*Separa los elementos con 20px*/
+    }
+}
+
+.nosotros {
+    display: flex;
+    /*Esto hace que quede todo como si fuese una malla y así poder ordenar las cosas con más facilidad*/
+    justify-content: center;
+    /*Centra el contenido*/
+    column-gap: 2rem;
+    /*Separa los elementos con 20px*/
+}
+
+.nosotros__imagen {
+    grid-row: 1/2;
+    /*Toma posicion de fila del 1 al 2*/
     margin: 0 2rem;
+    /*Margen de 20px a la derecha y a la izquierda*/
+    width: 100%;
+    /*Utiliza el ancho maximo*/
 }
 
-.iconos{
+@media (min-width: 768px) {
+    .nosotros__imagen {
+        grid-column: 2/3;
+        /*Toma posicion de columna del 2 al 3*/
+    }
+}
+
+.iconos {
     display: grid;
+    /*Esto hace que quede todo como si fuese una malla y así poder ordenar las cosas con más facilidad*/
+}
+
+/**Bloques**/
+
+.bloques {
+    display: grid;
+    /*Esto hace que quede todo como si fuese una malla y así poder ordenar las cosas con más facilidad*/
+    grid-template-columns: repeat(2, 1fr);
+    /*De esta forma se muestra 2  elementos por columna*/
+    gap: 2rem;
+    /*Separa los elementos con 20px*/
+}
+
+@media (min-width: 768px) {
+    .bloques {
+        grid-template-columns: repeat(4, 1fr);
+        /*De esta forma se muestra 4  elementos por columna*/
+    }
+}
+
+.bloque{
+    text-align: center;
+    /*Un alineado central*/
+}
+
+.bloque__imagen{
+    width: 100%;
+    /*Utiliza el ancho maximo*/
+}
+
+.bloque__titulo{
+    margin: 0;
+    /*Margen de 0px*/
 }
