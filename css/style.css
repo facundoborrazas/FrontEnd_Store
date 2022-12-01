@@ -2,7 +2,7 @@
     --primario: #9c27b0;
     --primarioOscuro: #89119d;
     --secundario: #FFCE00;
-    --secundarioOscuro: rgb(233, 207, 2);
+    --secundarioOscuro: rgb(229, 204, 9);
     --blanco: #fff;
     --negro: #000;
 
@@ -47,7 +47,7 @@ a {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
     /*Las imagenes tienen su ancho maximo*/
 }
 
@@ -195,11 +195,6 @@ h3 {
     /*Relleno de 10px*/
 }
 
-.producto__imagen {
-    width: 100%
-        /*Las imagenes estan a su ancho maximo*/
-}
-
 .producto__nombre {
     font-size: 4rem;
     /*Tamaño de fuente de 40px*/
@@ -301,8 +296,6 @@ h3 {
     /*Toma posicion de fila del 1 al 2*/
     margin: 0 2rem;
     /*Margen de 20px a la derecha y a la izquierda*/
-    width: 100%;
-    /*Utiliza el ancho maximo*/
 }
 
 @media (min-width: 768px) {
@@ -335,17 +328,107 @@ h3 {
     }
 }
 
-.bloque{
+.bloque {
     text-align: center;
     /*Un alineado central*/
 }
 
-.bloque__imagen{
-    width: 100%;
-    /*Utiliza el ancho maximo*/
-}
-
-.bloque__titulo{
+.bloque__titulo {
     margin: 0;
     /*Margen de 0px*/
+}
+
+/** Pagina del producto **/
+
+@media (min-width: 768px) {
+    .camisa {
+        display: grid;
+        /*Esto hace que quede todo como si fuese una malla y así poder ordenar las cosas con más facilidad*/
+        grid-template-columns: repeat(2, 1fr);
+        /*De esta forma se muestra 2  elementos por fila*/
+        column-gap: 2rem;
+        /*Separa los elementos con 20px*/
+    }
+}
+
+.formulario {
+    display: grid;
+    /*Esto hace que quede todo como si fuese una malla y así poder ordenar las cosas con más facilidad*/
+    grid-template-columns: repeat(1, 1fr);
+    /*De esta forma se muestra 1  elemento por fila*/
+    gap: 2rem;
+    /*Separa los elementos con 20px*/
+}
+
+@media (min-width: 768px) {
+    .formulario {
+        display: grid;
+        /*Esto hace que quede todo como si fuese una malla y así poder ordenar las cosas con más facilidad*/
+        grid-template-columns: repeat(2, 1fr);
+        /*De esta forma se muestra 2  elementos por fila*/
+        gap: 2rem;
+        /*Separa los elementos con 20px*/
+    }
+}
+
+.formulario__campo {
+    border: 1rem solid var(--primarioOscuro);
+    /*border-color: var(--primarioOscuro);
+    border-width: 1rem;
+    border-style: solid;*/
+    background-color: var(--primario);
+    /*Color de background especifico*/
+    color: var(--blanco);
+    /*Color de letra especificio*/
+    font-size: 2rem;
+    /*Tamaño de fuente de 20px*/
+    font-family: Arial, Helvetica, sans-serif;
+    /*Familia de fuente especifica*/
+    padding: 1rem;
+    /*Relleno de 20px*/
+    appearance: none;
+}
+
+.formulario__submit {
+    background-color: var(--secundario);
+    /*Color de background especifico*/
+    border: none;
+    /*Saca los bordes*/
+    font-family: var(--fuentePrincipal);
+    /*Familia de fuente especifica*/
+    font-size: 2rem;
+    /*Tamaño de fuente de 20px*/
+    padding: 2rem;
+    /*Relleno de 20px*/
+    transition: background-color .3s ease;
+    /*Genera una transicion de la propiedad que se le indique*/
+    grid-column: 1/2;
+    /*Toma posicion de columna del 1 al 3*/
+}
+
+
+@media (min-width: 768px) {
+    .formulario__submit {
+        background-color: var(--secundario);
+        /*Color de background especifico*/
+        border: none;
+        /*Saca los bordes*/
+        font-family: var(--fuentePrincipal);
+        /*Familia de fuente especifica*/
+        font-size: 2rem;
+        /*Tamaño de fuente de 20px*/
+        padding: 2rem;
+        /*Relleno de 20px*/
+        transition: background-color .3s ease;
+        /*Genera una transicion de la propiedad que se le indique*/
+        grid-column: 1/3;
+        /*Toma posicion de columna del 1 al 3*/
+    }
+}
+
+.formulario__submit:hover {
+    cursor: pointer;
+    /*Pone el cursor de la manito cuando se esta arriba del boton*/
+    background-color: var(--secundarioOscuro);
+    /*Color de background especifico*/
 }
